@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="w-75 bg-info p-5 m-auto">
+        <label for="productName">Product Name</label>
+        <input type="text" class="form-control" id="productName">
+        <label for="productPrice">Product Price</label>
+        <input type="number" class="form-control" id="productPrice">
+        <label for="productCategory">Product Category</label>
+        <input type="text" class="form-control" id="productCategory">
+        <label for="productDescription">Product Discription</label>
+        <textarea  class="form-control" id="productDescription" ></textarea>
+        <button id="addBtn" class="btn btn-primary mt-4 float-end">Add Product</button>
+        <div class="clearfix"></div>
+
+        <input onkeyup="search(this.value)"  type="text" class="form-control my-4">
+
+
+        <table  class="table table-striped ">
+            <thead>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Discription</th>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
